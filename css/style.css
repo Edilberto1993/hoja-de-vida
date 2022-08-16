@@ -1,0 +1,610 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  background-color: #a945c7;
+  box-shadow: 0 0 10px #a945c7, 0 0 20px #a945c7, 0 0 40px #a945c7;
+}
+header nav.nav {
+  display: flex;
+  height: 60px;
+  justify-content: space-around;
+}
+header nav.nav div.portafolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  font-size: 25px;
+}
+header nav.nav div.portafolio a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+}
+header nav.nav div {
+  margin-right: 20px;
+  width: 70%;
+}
+header nav.nav div ul {
+  display: flex;
+  height: 100%;
+  list-style: none;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+header nav.nav div ul li {
+  width: 150px;
+  font-size: 17px;
+}
+header nav.nav div ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+}
+
+@media (max-width: 819px) and (min-width: 400px) {
+  header nav.nav div {
+    display: none;
+  }
+}
+section#inicio {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  background-image: url(../images/futuro10.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 200px 150px rgb(16, 0, 26);
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  left: 0;
+  clip-path: polygon(0 0, 200% 0%, 100% 69%, 1% 100%);
+}
+section#inicio div.icontenedor {
+  padding-top: 80px;
+  margin-left: 5%;
+  height: 300px;
+  width: 500px;
+  align-items: center;
+}
+section#inicio div.icontenedor span.name {
+  font-size: 35px;
+  animation: name-neon 2s infinite alternate;
+}
+@keyframes name-neon {
+  0%, 10%, 15%, 20%, 30%, 35%, 40%, 100% {
+    text-shadow: 9px 9px 18px #b8078c, 3px 3px 5px #ce0c9d, -3px -3px 5px #ad0d85, -9px -9px 27px #af0184;
+  }
+  10%, 15%, 60% {
+    text-shadow: none;
+  }
+}
+section#inicio div.icontenedor h1.neon-titulo {
+  margin: 10px 0;
+  animation: neon-titulo 2s infinite alternate;
+  font-size: 50px;
+}
+@keyframes neon-titulo {
+  0% {
+    text-shadow: 0px -1px 4px #fff, 0px -2px 10px #ff0, 0px -10px 20px #ff8000;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+section#inicio div.icontenedor h1.neon-titulo span.letra {
+  animation: neon-titulo 5s infinite alternate;
+}
+@keyframes neon-titulo {
+  0%, 10%, 20%, 30%, 40%, 100% {
+    text-shadow: 0px -1px 4px rgb(255, 255, 255), 0px -2px 10px #ff0, 0px -10px 20px #ff8000;
+  }
+  10% {
+    text-shadow: none;
+  }
+}
+section#inicio div.icontenedor span.neon-work {
+  float: left;
+  position: relative;
+  animation: neon-work 2s infinite alternate;
+  font-size: 35px;
+}
+@keyframes neon-work {
+  0%, 10%, 15%, 20%, 30%, 35%, 40%, 100% {
+    text-shadow: 9px 9px 18px #b8078c, 3px 3px 5px #ce0c9d, -3px -3px 5px #ad0d85, -9px -9px 27px #af0184;
+  }
+  10%, 15%, 60% {
+    text-shadow: none;
+  }
+}
+
+body {
+  background-color: #06000c;
+  color: white;
+  font-family: "Chakra Petch", sans-serif;
+}
+body * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+section#sobremi {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  margin-top: 100vh;
+  text-align: justify;
+}
+section#sobremi div.contenedor {
+  padding: 50px 0;
+  width: 70%;
+  margin: auto;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 #06000c;
+  border-radius: 10px;
+}
+section#sobremi div.contenedor div.titulo h2 {
+  margin-bottom: 50px;
+  padding: 0;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+section#sobremi div.contenedor div.infocontenedor {
+  display: flex;
+  align-items: center;
+}
+section#sobremi div.contenedor div.infocontenedor div.img {
+  display: flex;
+  align-items: center;
+  width: 286px;
+  border-radius: 10px;
+}
+section#sobremi div.contenedor div.infocontenedor div.info div {
+  width: 90%;
+}
+section#sobremi div.contenedor div.infocontenedor div.info div div {
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 25px;
+}
+section#sobremi div.contenedor div.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+section#sobremi div.contenedor div.button a.btn-neon {
+  position: relative;
+  padding: 15px 30px;
+  color: #fff;
+  letter-spacing: 4px;
+  font-size: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  border: 1px solid #a945c7;
+  box-shadow: 0 0 10px #a945c7, 0 0 20px #a945c7, 0 0 40px #a945c7;
+}
+section#sobremi div.contenedor div.button a.btn-neon span {
+  position: absolute;
+  display: block;
+}
+section#sobremi div.contenedor div.button a.btn-neon span#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffffff);
+}
+section#sobremi div.contenedor div.button a.btn-neon span#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(270deg, transparent, #ffffff);
+}
+section#sobremi div.contenedor div.button a.btn-neon span#span2 {
+  top: -100%;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(180deg, transparent, #ffffff);
+}
+section#sobremi div.contenedor div.button a.btn-neon:hover {
+  box-shadow: inset 20px 0 60px #f0f, inset -20px 0 60px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, -10px 0 60px #f0f, 10px 0 60px #0ff;
+  transition-delay: 1.3s;
+}
+section#sobremi div.contenedor div.button a.btn-neon:hover #span1 {
+  left: 100%;
+  transition: 1s;
+}
+section#sobremi div.contenedor div.button a.btn-neon:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+section#sobremi div.contenedor div.button a.btn-neon:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+@media (max-width: 991px) and (min-width: 400px) {
+  section#sobremi div.contenedor {
+    width: 90%;
+  }
+  section#sobremi div.contenedor div.infocontenedor {
+    display: block;
+  }
+  section#sobremi div.contenedor div.infocontenedor div.img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  section#sobremi div.contenedor div.infocontenedor div.info div {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+section#servicios {
+  position: relative;
+  display: flex;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  margin-top: 40vh;
+  text-align: justify;
+}
+section#servicios div.scontenedor {
+  padding: 50px 0;
+  width: 70%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 #06000c;
+  border-radius: 10px;
+}
+section#servicios div.scontenedor div h2 {
+  margin-bottom: 50px;
+  padding: 0;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+section#servicios div.scontenedor div.container {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+section#servicios div.scontenedor div.container div.card {
+  margin: 0 20px;
+  position: relative;
+}
+section#servicios div.scontenedor div.container div.card div.face {
+  width: 300px;
+  height: 200px;
+  transition: 0.4s;
+}
+section#servicios div.scontenedor div.container div.card div.face1 {
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+section#servicios div.scontenedor div.container div.card i {
+  font-size: 3em;
+  color: white;
+  display: inline-block;
+}
+section#servicios div.scontenedor div.container div.card h3 {
+  font-size: 1em;
+  color: white;
+  text-align: center;
+}
+section#servicios div.scontenedor div.container div.card div.face2 {
+  position: relative;
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
+}
+section#servicios div.scontenedor div.container div.card div.face2 div.content p {
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+section#servicios div.scontenedor div.container div.card:hover .face.face1 {
+  transform: translateY(0);
+  box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+}
+section#servicios div.scontenedor div.container div.card:hover .face.face2 {
+  transform: translateY(0);
+}
+
+@media (max-width: 991px) and (min-width: 400px) {
+  section#servicios div.scontenedor {
+    width: 90%;
+  }
+}
+section#habilidades {
+  position: relative;
+  display: flex;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  margin-top: 40vh;
+  text-align: justify;
+}
+section#habilidades div.hcontenedor {
+  padding: 50px 40px;
+  width: 70%;
+  margin: auto;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 #06000c;
+  border-radius: 10px;
+}
+section#habilidades div.hcontenedor div h2 {
+  margin-bottom: 50px;
+  padding: 0;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+section#habilidades div.hcontenedor div.skills div.char {
+  margin-top: 20px;
+}
+section#habilidades div.hcontenedor div.skills div.char span img {
+  margin-right: 20px;
+}
+section#habilidades div.hcontenedor div.skills div.char span.animation {
+  display: block;
+  width: 100%;
+  height: 8px;
+  background-color: rgb(197, 197, 197);
+  border-radius: 10px;
+}
+section#habilidades div.hcontenedor div.skills div.char span.animation span.ss {
+  display: block;
+  width: var(--w);
+  height: 8px;
+  z-index: 20;
+  background-color: #a945c7;
+  box-shadow: 0 0 10px #a945c7, 0 0 10px #a945c7, 0 0 10px #a945c7;
+  animation: aumentar 5s ease;
+}
+@keyframes aumentar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: var(--w);
+  }
+}
+section#habilidades div.hcontenedor div.skills div.char span.animation span.ss:hover {
+  animation: 5s ease;
+}
+
+@media (max-width: 991px) and (min-width: 400px) {
+  section#habilidades div.hcontenedor {
+    width: 90%;
+  }
+}
+section#proyectos {
+  position: relative;
+  display: flex;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  margin-top: 40vh;
+  text-align: justify;
+}
+section#proyectos div.pcontenedor {
+  padding: 50px 0;
+  width: 70%;
+  margin: auto;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 #06000c;
+  border-radius: 10px;
+}
+section#proyectos div.pcontenedor div h2 {
+  margin-bottom: 50px;
+  padding: 0;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+section#proyectos div.pcontenedor div.cardsp {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+}
+section#proyectos div.pcontenedor div.cardsp div.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 200px;
+  height: 320px;
+  margin: 20px;
+}
+section#proyectos div.pcontenedor div.cardsp div.card div.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.8s;
+  box-shadow: 0 0 10px #a945c7, 0 0 10px #a945c7;
+}
+section#proyectos div.pcontenedor div.cardsp div.card div.front {
+  transform: perspective(600px) rotateY(0deg);
+  bottom: 0 5px 10px #000;
+}
+section#proyectos div.pcontenedor div.cardsp div.card div.front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section#proyectos div.pcontenedor div.cardsp div.card div.front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+section#proyectos div.pcontenedor div.cardsp div.card div.back {
+  transform: perspective(600px) rotateY(180deg);
+  background-color: rgb(3, 35, 54);
+  padding: 15px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(169, 69, 199);
+}
+section#proyectos div.pcontenedor div.cardsp div.card div.back img.cardimg {
+  margin: 10px 0;
+  width: 60px;
+}
+section#proyectos div.pcontenedor div.cardsp div.card div.back a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+section#proyectos div.pcontenedor div.cardsp div.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+section#proyectos div.pcontenedor div.cardsp div.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+@media (max-width: 991px) and (min-width: 400px) {
+  section#proyectos div.pcontenedor {
+    width: 90%;
+  }
+}
+section#contacto {
+  position: relative;
+  display: flex;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  margin-top: 30vh;
+  text-align: justify;
+}
+section#contacto div.ccontenedor {
+  padding: 50px 0;
+  width: 70%;
+  margin: auto;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 #06000c;
+  border-radius: 10px;
+}
+section#contacto div.ccontenedor div h2 {
+  margin-bottom: 50px;
+  padding: 0;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+section#contacto div.ccontenedor div.contactar {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 20px;
+  flex-wrap: wrap;
+}
+section#contacto div.ccontenedor div.contactar div.redes {
+  padding: 60px 0;
+  width: 500px;
+}
+section#contacto div.ccontenedor div.contactar div.redes span {
+  display: block;
+}
+section#contacto div.ccontenedor div.contactar div.redes span img {
+  margin-right: 20px;
+}
+section#contacto div.ccontenedor div.contactar form.formulario {
+  align-items: center;
+  width: 500px;
+  height: 400px;
+}
+section#contacto div.ccontenedor div.contactar form.formulario input {
+  display: block;
+  width: 90%;
+  height: 50px;
+  margin: 20px;
+  padding-left: 10px;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 1px solid #a945c7;
+  outline: none;
+  color: white;
+  font-size: 17px;
+}
+section#contacto div.ccontenedor div.contactar form.formulario textarea {
+  width: 90%;
+  height: 150px;
+  margin: 0 20px;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  border-bottom: 1px solid #a945c7;
+  color: white;
+  font-size: 17px;
+}
+section#contacto div.ccontenedor div.contactar form.formulario input.btn-enviar {
+  text-align: center;
+  padding: 0;
+  width: 160px;
+  background-color: transparent;
+  border: 1px solid #a945c7;
+  box-shadow: 0 0 10px #a945c7, 0 0 20px #a945c7, 0 0 40px #a945c7;
+  color: white;
+}
+section#contacto div.ccontenedor div.contactar form.formulario input.btn-enviar:hover {
+  background-color: #a945c7;
+}
+
+@media (max-width: 991px) and (min-width: 400px) {
+  section#contacto div.ccontenedor {
+    width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */

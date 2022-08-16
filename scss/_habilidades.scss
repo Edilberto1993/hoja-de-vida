@@ -1,0 +1,84 @@
+section#habilidades{
+    position: relative;
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    margin-top: 40vh;
+    text-align: justify;
+    div.hcontenedor{
+        padding: 50px 40px;
+        width: 70%;
+        margin: auto;
+        font-size: 20px;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 8px 32px 0 #06000c;
+        border-radius: 10px ;
+        div{
+            h2{
+                margin-bottom: 50px;
+                padding: 0;
+                font-size: 40px;
+                text-align: center;
+                text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5) ;
+    
+            }
+        }
+        div.skills{
+            div.char{
+                margin-top: 20px;
+                
+                span{
+                   img{
+                    margin-right: 20px;
+                   } 
+                   
+                }
+                span.animation{
+                    display: block;
+                    width: 100%;
+                    height: 8px;
+                    background-color: rgb(197, 197, 197);
+                    border-radius: 10px;
+                    span.ss{
+                        display: block;
+                        width: var(--w);
+                        height: 8px;
+                        z-index: 20;
+                        background-color:#a945c7 ;
+                        box-shadow: 0 0 10px #a945c7,
+                                    0 0 10px #a945c7,
+                                    0 0 10px #a945c7;
+
+                                    
+                        animation: aumentar 5s ease;
+                    }
+                    @keyframes aumentar  {
+                        0%{width: 0%;}
+                        100%{width: var(--w)}
+                    }
+                    span.ss:hover {
+                        animation: 5s ease;
+        
+                    }
+                    
+                    
+                    
+
+                }
+                
+            }
+            
+        }
+    }
+}
+@media(max-width: 991px) and (min-width: 400px){
+    section#habilidades{
+        div.hcontenedor{
+            width: 90%;
+            
+        }
+
+    }
+}
