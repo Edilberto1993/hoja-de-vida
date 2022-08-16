@@ -81,7 +81,6 @@ section#contacto{
                     text-align: center;
                     padding: 0;
                     width: 160px;
-                    background-color: transparent;
                     border: 1px solid #a945c7;
                      box-shadow: 0 0 10px #a945c7,
                                  0 0 20px #a945c7,
@@ -90,6 +89,7 @@ section#contacto{
                 }
                 input.btn-enviar:hover{
                     background-color: #a945c7;
+                    
                 }
 
 
@@ -97,7 +97,7 @@ section#contacto{
         }
     }
 }
-@media(max-width: 991px) and (min-width: 400px){
+@media(max-width: 991px) and (min-width: 300px){
     section#contacto{
         div.ccontenedor{
             width: 90%;
