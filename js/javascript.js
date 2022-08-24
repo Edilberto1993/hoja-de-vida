@@ -28,3 +28,26 @@ const maquinaEscribir1 = (text = '',tiempo = 300, etiqueta = '') => {
 
  maquinaEscribir1("Front-end Developer    ",180, maquina1)
  
+
+
+ ////////////////////////////////////////////////////////////////
+
+ const iconoMenu = document.querySelector('#icono-menu'),
+        menu = document.querySelector('#menu');
+
+ iconoMenu.addEventListener('click', (e) => {
+
+  menu.classList.toggle('active');
+  document.body.classList.toggle('opacity');
+
+  const rutaActual = e.target.getAttribute('src');
+
+  if(rutaActual == 'fa-solid fa-bars'){
+    e.target.setAttribute('class', 'fa-solid2 fa-bars')
+  }else{
+    e.target.setAttribute('class', 'fa-solid fa-bars')
+
+  }
+ })
+      
+ 
