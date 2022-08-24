@@ -19,6 +19,7 @@ header{
         justify-content: space-around;
         div.main{
             display: none;
+            
         }
         div.portafolio{
             display: flex;
@@ -99,7 +100,7 @@ header{
                 
             }
             .active{
-                
+
                 transform: translate(-600px);
             }
             .opacity{
